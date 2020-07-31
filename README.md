@@ -3,8 +3,8 @@ Design and development of Python Flask web application for financial Value at Ri
 
 The web application can be found on this link: https://stag-trade.ew.r.appspot.com/
 
-The backend scripts for the generation of trading signals for EC2 and Lambda function can be found in the Lambda and EC2 folder respectively
+The backend scripts for the generation of trading signals for EC2 and Lambda function can be found in the Lambda and EC2 folders respectively
 
-In GAE contain the flask app. There is index.py which is python script which defines all the routing and transfer of the data for the website. there is also ec2.py and activatelambda.py, these scripts activate pass data to the Lambda function and EC2 for processing.
+In GAE it contains the flask app. There is index.py which is a python script which defines all the routing and transfer of data for the website. There is also ec2.py and activatelambda.py, these scripts activate and pass data to the Lambda function and EC2 for processing.
 
 Also in GAE you will find the HTML pages and CSS scripts used for the website.
