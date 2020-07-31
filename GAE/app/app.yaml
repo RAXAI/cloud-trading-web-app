@@ -1,0 +1,5 @@
+runtime: python37
+entrypoint: gunicorn -b :$PORT index:app
+env_variables:
+ AWS_ACCESS_KEY_ID: "xxxxxxxxxxxxxx"
+ AWS_SECRET_ACCESS_KEY: "xxxxxxxxx"

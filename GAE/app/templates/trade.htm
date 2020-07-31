@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Trade Analysis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/static/images/number.png");
+  min-height: 75%;
+ 
+
+}
+
+.menu {
+  display: none;
+}  
+  
+.stroke {
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.op2  {
+  background:white
+}
+</style>
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.htm" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.htm" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="trade.htm" class="w3-button w3-block w3-black">TRADING ANALYSIS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">6605258</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white stroke" style="font-size:120px">Trade<br>Analysis</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Stag Hill, Guildford</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="trade">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TRADE ANALYSIS CALCULATOR</span></h5>
+    <p><span class="w3-tag">FYI!</span> Trading Analysis calculator is below. Input values, and an analysis based on the trading strategy for a select comapany will be implemented. This will return
+    the overall total average profit/loss and average value at risk (VAR) at the 95th and 99th confidence level based on the buy and sell signal we formulate.Among our scalable services, Lambda will provide a quicker result compared to the EC2, but both will provide the necessary results after a small moment of time</p>
+  <form action="/calculate" method="post" >
+  
+  	<label for="comp"><b>Company</b></label>
+      <p><select class="w3-select w3-padding-16 w3-border select2 op2" type="text" name="comp" autocomplete="off" required>
+			<option  value="" disabled selected >Make Selection..</option>
+			<option value="AAPL">Apple</option>
+			<option value="AMZN">Amazon</option>
+			<option value="BTC-GBP">Bit Coin</option>
+			<option value="BABA">Alibaba</option>
+		</select></p>
+		<label for="ma"><b>Moving Average Period</b></label>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Enter Number Of Days" required name="ma" min="1" max="500"></p>
+      
+      <label for="var"><b>Var Period</b></label>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Enter Number Of Days" required name="var" min="4" max="500"></p>
+      
+      <label for="mc"><b>Monte Carlo Sample Size</b></label>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Enter Numerical Value" required name="mc" min="1" max="1000000"></p>
+      
+      	   <label for="resources"><b> Number of Resources</b></label>
+           <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Enter Numerical Value" required name="resources" min="1" max="10"></p>
+           
+           <label for="service"><b>Scalable Service</b></label>
+      <p><select class="w3-select w3-padding-16 w3-border select2 op2" type="text" name="service" autocomplete="off" required>
+			<option  value="" disabled selected >Make Selection..</option>
+			<option value="ec2">EC2</option>
+			<option value="lambda">Lambda</option>
+			
+		</select></p>
+           
+      <p><button class="w3-button w3-black" type="submit">SUBMIT</button></p>
+    </form>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+    <img src="static/images/stag.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <footer>&copy; Copyright 2020 Stag Trading</footer>
+
+  </div>
+</div>
+</body>
+</html>

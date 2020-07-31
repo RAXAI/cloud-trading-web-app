@@ -1,0 +1,248 @@
+/* CSS layout */
+body ,html{
+
+font: 15px Arial, Helvetica, sans-serif;
+color: black;
+height: 100%;
+margin: 0;
+margin-top:50px;
+}
+logo { 
+  opacity: 0.8; 
+} 
+
+logo:hover { 
+  opacity: 1; 
+}
+
+
+
+
+a{
+
+outline: 0;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+ -webkit-filter: drop-shadow(0.1px 0.1px 0 white);
+                
+  filter: drop-shadow(0.1px 0.1px 0 white);
+     
+}
+header img {
+
+height: 80px;
+margin-left:40px;
+
+}
+header {
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 50px 0 black;
+    z-index:1000;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: #DCDCDC;
+    text-decoration: none;
+}
+
+h1, h1 a, h2, h2 a, h3, {
+text-decoration: none;
+font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+color: black;
+}
+h1 {
+letter-spacing: -1px;
+font-size: 1.8em;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.bg {
+  /* The image used */
+  background-image: url("images/wallst.jpg");
+
+  /* Full height */
+  height: 100%;
+  margin-top:80px;
+  
+  /*min-height:380px;*/
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.icon {
+    background: url(images/stag.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+}
+
+
+select {
+  -webkit-appearance: menulist-button;
+  color: black;
+}
+
+select:invalid {
+  color: grey;
+}
+
+.table-responsive {
+    max-height:400px;
+    max-width:600px;
+    overflow-x:scroll;
+}
+
+.container2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(125%, -50%);
+  z-index: 2;
+  width: 20%;
+  padding: 16px;
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  min-width:200px;
+
+}
+
+
+
+
+
+.container3 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-42%, -50%);
+  z-index: 2;
+  width: auto;
+  padding: 16px;
+
+}
+
+
+.container4 {
+  left: 100%;
+
+}
+
+input[type=text],select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+
+.btn:hover {
+background-color:grey;
+ 
+  
+ }
+ 
+ 
+ /* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 2px solid #2F4F4F;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-150%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.table-fixed{
+  width: 100%;
+  background-color: #f3f3f3;
+  tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+    }
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+       background-color: #f39c12;
+       border-color:#e67e22;
+      }
+    }
+  }
+}
+
+
+
+
