@@ -1,7 +1,7 @@
 # cloud-trading-web-app
 Design and development of Python Flask web application for financial Value at Risk (VaR) calculation for various trading dataset and deployed in Multi-Cloud (Google App Engine, AWS EC2, AWS lambda, S3).
 
-The web application can be found on this link: https://stag-trade.ew.r.appspot.com/
+The web application can be found on this link: https://stag-signals.ue.r.appspot.com/index.htm
 
 The backend scripts for the generation of trading signals for EC2 and Lambda function can be found in the Lambda and EC2 folders respectively
 
